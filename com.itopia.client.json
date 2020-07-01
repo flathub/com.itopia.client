@@ -94,20 +94,7 @@
                   }
               ]
           },
-          {
-              "name": "libusb",
-              "buildsystem": "autotools",
-              "config-opts": ["--disable-static", "--disable-udev"],
-              "cleanup": [
-          ],
-              "sources": [
-                  {
-                       "type": "git",
-                       "url": "https://github.com/libusb/libusb.git",
-                       "tag": "v1.0.23"
-                  }
-              ]
-          },
+        "shared-modules/libusb/libusb.json",
           {
               /**
                * libfreerdp use xprop to try to detect keyboard layout
