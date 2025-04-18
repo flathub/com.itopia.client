@@ -169,7 +169,7 @@
           {
               "name": "openh264",
               "buildsystem": "simple",
-              "build-commands": [ "make -j PREFIX=/app install" ],
+              "build-commands": [ "make -j $FLATPAK_BUILDER_N_JOBS PREFIX=/app install" ],
               "sources": [
                   {
                       "type": "git",
