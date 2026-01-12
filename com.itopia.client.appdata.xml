@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
+<component type="desktop-application">
   <id>com.itopia.client</id>
   <name>itopia Remote Desktop Client</name>
   <summary>A Client for Remote Desktop Protocol (RDP) Servers</summary>
   <developer_name>itopia, Inc.</developer_name>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary=https://www.itopia.com/terms-and-conditions/</project_license>
-
+  <launchable type="desktop-id">com.itopia.client.desktop</launchable>
   <url type="homepage">https://www.itopia.com/</url>
   <description>
+    <p>**NOTE: This wrapper is not verified by, affiliated with, or supported by itopia, Inc.**</p>
     <p>
-    The itopia Remote Desktop Client is an enhanced user client for the remote desktop protocol (RDP). By providing a custom client, itopia offers features and functionality not natively available while still leveraging the protocol for its excellent remote session capabilities.
+      The itopia Remote Desktop Client is an enhanced user client for the remote desktop protocol (RDP).
+      By providing a custom client, itopia offers features and functionality not natively available
+      while still leveraging the protocol for its excellent remote session capabilities.
     </p>
   </description>
    <screenshots>
