@@ -1,7 +1,7 @@
 {
     "app-id": "com.itopia.client",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.14",
+    "runtime-version": "5.15-25.08",
     "sdk": "org.kde.Sdk",
     "command": "itopia Remote Desktop Client",
     "finish-args": [
@@ -95,20 +95,6 @@
               ]
           },
           {
-              "name": "libusb",
-              "buildsystem": "autotools",
-              "config-opts": ["--disable-static", "--disable-udev"],
-              "cleanup": [
-          ],
-              "sources": [
-                  {
-                       "type": "git",
-                       "url": "https://github.com/libusb/libusb.git",
-                       "tag": "v1.0.23"
-                  }
-              ]
-          },
-          {
               /**
                * libfreerdp use xprop to try to detect keyboard layout
                */
@@ -137,44 +123,6 @@
                       "type": "git",
                       "url": "https://github.com/LudovicRousseau/PCSC",
                       "tag": "pcsc-1.8.26"
-                  }
-              ]
-          },
-          {
-              "name": "ffmpeg",
-              "buildsystem": "autotools",
-              "config-opts": [
-                  "--enable-shared",
-                  "--enable-swresample",
-                  "--disable-static",
-                  "--disable-avdevice",
-                  "--disable-avcodec",
-                  "--disable-avformat",
-                  "--disable-postproc",
-                  "--disable-avfilter",
-                  "--disable-programs",
-                  "--disable-doc"
-              ],
-              "cleanup": [
-                  "/share/ffmpeg"
-              ],
-              "sources": [
-                  {
-                      "type": "git",
-                      "url": "https://github.com/FFmpeg/ffmpeg.git",
-                      "tag": "n4.2.1"
-                  }
-              ]
-          },
-          {
-              "name": "openh264",
-              "buildsystem": "simple",
-              "build-commands": [ "make -j PREFIX=/app install" ],
-              "sources": [
-                  {
-                      "type": "git",
-                      "url": "https://github.com/cisco/openh264.git",
-                      "tag": "v1.8.0"
                   }
               ]
           },
